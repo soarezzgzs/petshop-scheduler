@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de petshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/Dog-Duotone--Streamline-Phosphor.png">
+</head>
+<body>
+    <span class="logo">
+        <img src="assets/Dog-Duotone--Streamline-Phosphor.png" alt="">
+        MUNDO PET
+    </span>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Sua agenda</h1>
+                <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+            </div>
+            <div class="date">
+                <div class="input-wrapper">
+                    <img src="assets/Calendar-Minimalistic--Streamline-Solar.png" class="icon-left" alt="">
+                    <input type="date" name="date" id="date">
+                    <img src="assets/Icon.png" class="icon-right" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="period-morning card">
+                <div class="card-titles">
+                    <div class="title-card">
+                        <img src="assets/Sun-Fog--Streamline-Solar.png" alt="">
+                        <h2>Manhã</h2>
+                </div>
+                <div class="hour-card">
+                    <p>09h-12h</p>
+                </div>
+            </div>
+            <div class="body-card">
+                <ul id="morning-list">
+                    <!-- <li class="person">
+                        <span>09:00</span>
+                        <span>Thor / </span>
+                        <span class="name">Fernanda Costa</span>
+                        <p>Vacinação</p>
+                        <button id="btn-remove">Remover agendamento</button>
+                    </li> -->
+                </ul>
+            </div>
+            </div>
+            <div class="period-afternoon card">
+                <div class="card-titles">
+                    <div class="title-card">
+                        <img src="assets/Cloud-Sun-4--Streamline-Solar.png" alt="">
+                        <h2>Tarde</h2>
+                </div>
+                <div class="hour-card">
+                    <p>13h-18h</p>
+                </div>
+            </div>
+            <div class="body-card">
+                <ul id="afternoon-list">
+                    <!-- <li class="person">
+                        <span>13:00</span>
+                        <span>Bella / </span>
+                        <span class="name">Pedro Martins</span>
+                        <p>Corte de Unhas</p>
+                        <button id="btn-remove">Remover agendamento</button>
+                    </li>
+                    <li class="person">
+                        <span>14:00</span>
+                        <span>Mel / </span>
+                        <span class="name">João Souza</span>
+                        <p>Aplicação de Anti-pulgas</p>
+                        <button id="btn-remove">Remover agendamento</button>
+                    </li>
+                    <li class="person">
+                        <span>16:00</span>
+                        <span>Simba / </span>
+                        <span class="name">Juliana Rocha</span>
+                        <p>Tosa Higiênica</p>
+                        <button id="btn-remove">Remover agendamento</button>
+                    </li> -->
+                </ul>
+            </div>
+            </div>
+            <div class="period-night card">
+                <div class="card-titles">
+                    <div class="title-card">
+                        <img src="assets/Moon-Stars--Streamline-Solar.png" alt="">
+                        <h2>Noite</h2>
+                </div>
+                <div class="hour-card">
+                    <p>19h-21h</p>
+                </div>
+            </div>
+            <div class="body-card">
+                <ul id="night-list">
+                    <!-- <li class="person">
+                        <span>20:00</span>
+                        <span>Max / </span>
+                        <span class="name">Camila Santos</span>
+                        <p>Limpeza de Dentes</p>
+                        <button id="btn-remove">Remover agendamento</button>
+                    </li> -->
+                </ul>
+            </div>
+            </div>
+        </main>
+        <button id="openForm">NOVO AGENDAMENTO</button>
+    </div>
+
+    <div class="modal">
+        <div class="agendamento hidden">
+                <button id="close"><img src="assets/Close-Small-Fill--Streamline-Rounded-Fill---Material-Symbols.png" alt=""></button>
+                <h1>Agende um atendimento</h1>
+                <p>Preencha os dados do cliente para realizar o agendamento</p>
+            
+        <form>
+            <div>
+                <label for="namePerson">Nome do tutor</label>
+                <input type="text" id="namePerson" placeholder="Helena Souza">
+            </div>
+            <div>
+                <label for="namePet">Nome do pet</label>
+                <input type="text" id="namePet" placeholder="Cheddar">
+            </div>
+            <div>
+                <label for="tel">Telefone</label>
+                <input type="tel" id="tel" placeholder="(00) 0 0000-0000">
+            </div>
+            <div>
+                <label for="description">Descrição do serviço</label>
+                <textarea name="" id="description" placeholder="Banho e tosa" rows="5" cols="40"></textarea>
+            </div>
+            <div class="times">
+                <div class="input-group">
+
+                    <label for="date-agendamento">Data</label>
+                        <div class="input-wrapper">
+                            <img src="assets/Calendar-Minimalistic--Streamline-Solar.png" class="icon-left" alt="">
+                            <input type="date" name="date-agendamento" id="date-agendamento" >
+                            <img src="assets/Icon.png" class="icon-right" alt="">
+                        </div>
+                </div>
+                <div class="input-group">
+
+                    <label for="time-agendamento">Hora</label>
+
+                    <div class="input-wrapper">
+
+                        <img src="assets/Clock-Circle--Streamline-Solar.png" class="icon-left" alt="">
+                        <select id="time-agendamento"></select>
+                        <img src="assets/Icon.png" class="icon-right" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="submit">AGENDAR</button>
+        </form>
+    </div>
+</div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    max-width: 28rem;
+    margin-inline: auto;
+    padding: 40px;
+    background-color: var(--background-tertiary);
+    & p {
+        margin-top: 4px;
+        margin-bottom: 28px;
+    }
+    & div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+    & .times {
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between;
+
+        & div{
+            display: flex;
+            flex-direction: column;
+            & input {
+                width: 100%;
+            }
+        }
+    }
+    & #submit {
+        padding: 12px 24px;
+        background-color: var(--content-brand);
+        border: none;
+        border-radius: 8px;
+        color: #050505;
+        margin-top: 30px;
+    }
+}
+
+#close {
+   top: 15px;
+   right: 10px;
+   cursor: pointer;
+   position: absolute;
+   background-color: transparent;
+   border: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+
+  z-index: 999;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+
+  & h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input,
+textarea {
+    background-color: #23242C;
+    /* border: var(--border-primary); */
+}
+
+.input-wrapper input,
+.input-wrapper select{
+
+  width: 100%;
+  height: 48px;
+
+  background: #1F1F28;
+  border: 1px solid #2F2F3A;
+  border-radius: 8px;
+
+  color: #fff;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-size: 14px;
+
+  appearance: none;
+
+  transition: border 0.2s;
+}
+
+.icon-left{
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  opacity: 0.7;
+}
+
+.icon-right{
+  position: absolute;
+  right: 12px;
+  width: 16px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.input-wrapper input:focus,
+.input-wrapper select:focus{
+  outline: none;
+  border-color: var(--content-brand);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    & .times {
+        display: flex;
+        flex-direction: row;
+            justify-content: space-between;
+
+        & div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .agendamento {
+        position: relative;
+    }
+    #close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
