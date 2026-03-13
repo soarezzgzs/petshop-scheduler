@@ -1,49 +1,6 @@
 # 🐶 Petshop Scheduling App
 
-![Project Preview](./.github/preview.png)
-
-A web application for managing **petshop appointments**, allowing users to schedule services, manage available time slots, and organize bookings throughout the day.
-
-This project was developed during my **Full Stack training at Rocketseat**, focusing on **JavaScript modular architecture, API integration, and user interface interactions**.
-
----
-
-# 🚀 Features
-
-- Create new pet appointments
-- Store appointments using a **local API (JSON Server)**
-- Display appointments separated by **Morning / Afternoon / Night**
-- Filter schedules by **selected date**
-- Prevent scheduling in **past dates**
-- Prevent scheduling in **past hours**
-- Prevent booking **already occupied time slots**
-- Automatically display **only available times**
-- Remove appointments with confirmation
-- Modal form interface for scheduling
-- Dynamic rendering of appointments
-- Modular JavaScript architecture
-
----
-
-# 🛠 Technologies Used
-
-This project was built using the following technologies:
-
-- **JavaScript (ES Modules)**
-- **Webpack**
-- **HTML5**
-- **CSS3**
-- **JSON Server**
-- **Day.js**
-- **Node.js**
-
----
-
-# 📂 Project Structure
-
-# 🐶 Petshop Scheduling App
-
-![Project Preview](./.github/preview.png)
+![Project Preview](./.github/preview.jpeg)
 
 A web application for managing **petshop appointments**, allowing users to schedule services, manage available time slots, and organize bookings throughout the day.
 
@@ -118,7 +75,6 @@ src
 │
 └── main.js
 
-
 ---
 
 # ⚙️ How to Run the Project
@@ -175,19 +131,19 @@ The system follows these business rules:
 
 ### Application Interface
 
-![Application Interface](./.github/app-interface.png)
+![Application Interface](./.github/app-interface.jpeg)
 
 ---
 
 ### Scheduling Modal
 
-![Scheduling Modal](./.github/scheduling-modal.png)
+![Scheduling Modal](./.github/scheduling-modal.jpeg)
 
 ---
 
 ### Daily Schedule
 
-![Daily Schedule](./.github/daily-schedule.png)
+![Daily Schedule](./.github/daily-schedule.jpeg)
 
 ---
 
